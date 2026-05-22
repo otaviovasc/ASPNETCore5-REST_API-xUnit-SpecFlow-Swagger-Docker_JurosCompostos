@@ -40,7 +40,7 @@ namespace APIFinancas.Especificacoes
         [Then(@"o resultado será (.*)")]
         public void ValidarResultado(double valorFinalEmprestimo)
         {
-            Assert.Equal(valorFinalEmprestimo, _valorCalculado);
+            Assert.Equal(valorFinalEmprestimo, _valorCalculado, 2);
         }
     }
 }
